@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${league.className} bg-rear`}>{children}</body>
+      <body
+        className={`${league.className} flex flex-col items-center bg-rear`}
+      >
+        {children}
+      </body>
     </html>
   )
 }

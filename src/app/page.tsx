@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <main className="flex flex-col items-center gap-10 pt-10 md:pt-0">
+      <main className="flex max-w-screen-2xl flex-col items-center gap-10 pt-10 md:pt-0">
         <FilterList
           level={'Senior'}
           languages={['HTML', 'Javascript']}

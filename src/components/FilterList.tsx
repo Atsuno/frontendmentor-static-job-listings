@@ -4,7 +4,7 @@ const FilterList: React.FC<
   Pick<CompanyType, 'tools' | 'level' | 'role' | 'languages'>
 > = ({ languages, level, role, tools }) => {
   return (
-    <section className="flex w-11/12 flex-row gap-5 rounded-lg bg-secondary-light p-5 shadow-xl md:-m-7 md:w-4/5 md:justify-between ">
+    <section className="-mt-32 flex w-11/12 flex-row gap-5 rounded-lg bg-white p-5 shadow-xl md:-mt-7 md:w-full md:justify-between ">
       <div className="flex flex-wrap gap-5">
         <div className="inline-flex">
           <p className="rounded-md rounded-r-none bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary md:h-fit ">
