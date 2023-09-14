@@ -1,35 +1,21 @@
 import { CompanyType } from '@/data/companies'
 
-const Tags: React.FC<
-  Pick<CompanyType, 'languages' | 'role' | 'level' | 'tools'>
-> = ({ languages, level, role, tools }) => {
-  const buttonStyle =
-    'rounded-md bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary hover:bg-primary hover:text-rear md:h-fit'
-
-  return (
-    <section className="flex flex-row flex-wrap gap-5 md:justify-end">
-      <button type="button" className={`${buttonStyle}`}>
-        {role}
-      </button>
-      <button type="button" className={`${buttonStyle}`}>
-        {level}
-      </button>
-      {languages.map((language, id) => (
-        <button type="button" key={id} className={`${buttonStyle}`}>
-          {language}
-        </button>
-      ))}
-      {tools.length !== 0 ? (
-        tools.map((tool, id) => (
-          <button type="button" key={id} className={`${buttonStyle}`}>
-            {tool}
-          </button>
-        ))
-      ) : (
-        <></>
-      )}
-    </section>
-  )
+type Props = {
+  tags: Array<string>
 }
+
+const Tags: React.FC<Props> = ({ tags }) => (
+  <section className="flex flex-row flex-wrap gap-5 md:justify-end">
+    {tags.map((tag) => (
+      <button
+        key={tag}
+        type="button"
+        className="rounded-md bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary duration-200 hover:bg-primary hover:text-rear md:h-fit"
+      >
+        {tag}
+      </button>
+    ))}
+  </section>
+)
 
 export default Tags
