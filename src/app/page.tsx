@@ -12,7 +12,7 @@ const Home = () => {
           level={'Senior'}
           languages={['HTML', 'Javascript']}
           role={'Frontend'}
-          tools={['SASS', 'Babel']}
+          tools={['SASS', 'Babel', 'Babel2', 'Babe3']}
         />
         {companies.map((company) => (
           <CompanyCard key={company.id} company={company} />

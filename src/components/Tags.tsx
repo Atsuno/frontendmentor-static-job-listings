@@ -8,16 +8,20 @@ const Tags: React.FC<
 
   return (
     <section className="flex flex-row flex-wrap gap-5 md:justify-end">
-      <button className={`${buttonStyle}`}>{role}</button>
-      <button className={`${buttonStyle}`}>{level}</button>
+      <button type="button" className={`${buttonStyle}`}>
+        {role}
+      </button>
+      <button type="button" className={`${buttonStyle}`}>
+        {level}
+      </button>
       {languages.map((language, id) => (
-        <button key={id} className={`${buttonStyle}`}>
+        <button type="button" key={id} className={`${buttonStyle}`}>
           {language}
         </button>
       ))}
       {tools.length !== 0 ? (
         tools.map((tool, id) => (
-          <button key={id} className={`${buttonStyle}`}>
+          <button type="button" key={id} className={`${buttonStyle}`}>
             {tool}
           </button>
         ))

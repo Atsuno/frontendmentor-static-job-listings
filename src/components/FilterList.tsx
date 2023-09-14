@@ -10,7 +10,10 @@ const FilterList: React.FC<
           <p className="rounded-md rounded-r-none bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary md:h-fit ">
             {role}
           </p>
-          <button className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit">
+          <button
+            type="button"
+            className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit"
+          >
             x
           </button>
         </div>
@@ -19,30 +22,89 @@ const FilterList: React.FC<
           <p className="rounded-md rounded-r-none bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary md:h-fit">
             {level}
           </p>
-          <button className="rounded-md rounded-l-none  bg-primary  px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit ">
+          <button
+            type="button"
+            className="rounded-md rounded-l-none  bg-primary  px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit "
+          >
             x
           </button>
         </div>
 
         <div className="inline-flex">
           <p className="rounded-md rounded-r-none bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary  md:h-fit">
-            {languages}
+            {languages[0]}
           </p>
-          <button className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit">
+          <button
+            type="button"
+            className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit"
+          >
             x
           </button>
         </div>
 
         <div className="inline-flex">
           <p className="rounded-md rounded-r-none bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary  md:h-fit">
-            {languages}
+            {languages[1]}
           </p>
-          <button className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit">
+          <button
+            type="button"
+            className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit"
+          >
+            x
+          </button>
+        </div>
+
+        <div className="inline-flex">
+          <p className="rounded-md rounded-r-none bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary  md:h-fit">
+            {tools[0]}
+          </p>
+          <button
+            type="button"
+            className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit"
+          >
+            x
+          </button>
+        </div>
+
+        <div className="inline-flex">
+          <p className="rounded-md rounded-r-none bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary  md:h-fit">
+            {tools[1]}
+          </p>
+          <button
+            type="button"
+            className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit"
+          >
+            x
+          </button>
+        </div>
+
+        <div className="inline-flex">
+          <p className="rounded-md rounded-r-none bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary  md:h-fit">
+            {tools[2]}
+          </p>
+          <button
+            type="button"
+            className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit"
+          >
+            x
+          </button>
+        </div>
+
+        <div className="inline-flex">
+          <p className="rounded-md rounded-r-none bg-secondary-dark bg-opacity-10 px-3 py-1 text-lg font-bold text-primary  md:h-fit">
+            {tools[3]}
+          </p>
+          <button
+            type="button"
+            className="rounded-md rounded-l-none bg-primary px-3 py-1 text-lg font-bold text-rear hover:bg-secondary md:h-fit"
+          >
             x
           </button>
         </div>
       </div>
-      <button className="font-bold text-primary hover:underline">Clear</button>
+      <button type="button" className="font-bold text-primary hover:underline">
+        Clear
+      </button>
     </section>
   )
 }

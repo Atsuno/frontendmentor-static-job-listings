@@ -28,7 +28,7 @@ const CompanyCard: React.FC<Props> = ({ company }) => {
     <section
       key={id}
       className={`${
-        isFeatured ? 'border-l-8 border-primary' : 'border-l-none'
+        isFeatured ? 'border-l-8 border-primary' : ''
       } shrink-1 flex w-11/12 flex-col justify-center gap-5 rounded-xl bg-secondary-light px-7 py-5 shadow-xl md:w-4/5 md:flex-row md:justify-between md:pt-5`}
     >
       <div className="flex flex-col gap-5 md:flex-row">
