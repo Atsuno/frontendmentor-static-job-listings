@@ -1,8 +1,24 @@
+import { companies } from '@/data/companies'
+import FilterList from '@/components/FilterList'
+import Header from '@/components/Header'
+import CompanyCard from '@/components/CompanyCard'
+
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      Hello World
-    </main>
+    <>
+      <Header />
+      <main className="flex flex-col items-center gap-10 pt-10 md:pt-0">
+        <FilterList
+          level={'Senior'}
+          languages={['HTML', 'Javascript']}
+          role={'Frontend'}
+          tools={['SASS', 'Babel']}
+        />
+        {companies.map((company) => (
+          <CompanyCard key={company.id} company={company} />
+        ))}
+      </main>
+    </>
   )
 }
 
